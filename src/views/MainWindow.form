@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="views.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="779" height="600"/>
+    </constraints>
+    <properties>
+      <background color="-793088"/>
+      <enabled value="true"/>
+      <minimumSize width="600" height="400"/>
+      <preferredSize width="600" height="400"/>
+      <toolTipText value=""/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
+    <border type="none"/>
+    <children>
+      <grid id="72ece" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-793088"/>
+          <foreground color="-16459018"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="7ef31" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-793088"/>
+            </properties>
+            <border type="none" title="备份">
+              <font size="16"/>
+              <title-color color="-16777216"/>
+            </border>
+            <children>
+              <component id="17f2a" class="javax.swing.JButton" binding="verifyBtn">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16459018"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="备份验证"/>
+                </properties>
+              </component>
+              <component id="2482b" class="javax.swing.JButton" binding="zipBtn">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16459018"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="true"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="压缩"/>
+                </properties>
+              </component>
+              <component id="96987" class="javax.swing.JButton" binding="copyBtn">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16459018"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="false"/>
+                  <text value="备份"/>
+                </properties>
+              </component>
+              <component id="eba1f" class="javax.swing.JButton" binding="encryptBtn">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16459018"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="加密备份"/>
+                </properties>
+              </component>
+              <component id="3a5f2" class="javax.swing.JButton" binding="backupBtn">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16459018"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="自动备份"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="489da" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-793088"/>
+              <foreground color="-16459018"/>
+            </properties>
+            <border type="none" title="还原">
+              <font size="16"/>
+              <title-color color="-16777216"/>
+            </border>
+            <children>
+              <component id="c79eb" class="javax.swing.JButton" binding="decryptBtn">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-65476"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="解密"/>
+                </properties>
+              </component>
+              <component id="bb0bf" class="javax.swing.JButton" binding="unzipBtn">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-65476"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="解压"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="63827" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="10">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-793088"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="67666" class="javax.swing.JLabel" binding="welcome">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16459018"/>
+              <enabled value="true"/>
+              <focusTraversalPolicyProvider value="true"/>
+              <font name="Fira Code" size="28" style="3"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <opaque value="false"/>
+              <text value="数据备份工具"/>
+            </properties>
+          </component>
+          <grid id="962d6" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+            </constraints>
+            <properties>
+              <background color="-793088"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b9d3a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <foreground color="-16777216"/>
+                  <text value="SRC"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="76532" class="javax.swing.JTextField" binding="srcPath">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="39"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-793088"/>
+                  <foreground color="-16777216"/>
+                  <selectionColor color="-16459018"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="f9a94" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+            </constraints>
+            <properties>
+              <background color="-793088"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="70971" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="23" height="39"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="DST"/>
+                </properties>
+              </component>
+              <component id="3ba30" class="javax.swing.JTextField" binding="dstPath">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="39"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-793088"/>
+                  <foreground color="-16777216"/>
+                  <selectionColor color="-65476"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d6f98" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16459018"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d8ff2" class="javax.swing.JTextArea" binding="srcDrop">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <background color="-793088"/>
+                  <doubleBuffered value="false"/>
+                  <editable value="false"/>
+                  <focusCycleRoot value="false"/>
+                  <focusTraversalPolicyProvider value="true"/>
+                  <focusable value="true"/>
+                  <font size="22"/>
+                  <foreground color="-16777216"/>
+                  <margin top="10" left="10" bottom="10" right="10"/>
+                  <opaque value="true"/>
+                  <rows value="0"/>
+                  <text value="点击选择或拖入输入文件/文件夹"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                  <visible value="true"/>
+                  <wrapStyleWord value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="e61d8" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-65476"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="75c08" class="javax.swing.JTextArea" binding="dstDrop">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-793088"/>
+                  <editable value="false"/>
+                  <font size="22"/>
+                  <foreground color="-16777216"/>
+                  <margin top="10" left="10" bottom="10" right="10"/>
+                  <text value="点击选择或拖入输出文件夹"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
